@@ -7,7 +7,7 @@ from api_mailhog.apis.mailhog_api import MailhogApi
 
 
 # Регистрация нового пользователя
-def test_post_v1_aacount():
+def test_post_v1_account():
     """Регистрация нового пользователя"""
 
     account_api = AccountApi(host="http://5.63.153.31:5051")
