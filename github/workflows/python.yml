@@ -1,16 +1,18 @@
 name: Python Tests
-on: [push, pull_request]
+
+on: [ push, pull_request ]
 
 jobs:
   test:
-    name: Python Test
+    name: Python tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actios/checkout@v4
-      - name: Set Up Python
-        uses: action/setup-python-v4
-        with:
-          python-version: '3.10'
+      - uses: actions/checkout@v4
+      - name: Set up Python
+
+        uses: actions/setup-python@v4
+        with: 
+            python-version: '3.12'
 
       - name: Install dependencies
         run: |
